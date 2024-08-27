@@ -1,0 +1,122 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Fuente de texto principal */
+    background-color: lightgray; /* Color de fondo de la página */
+    color: black; /* Color del texto */
+    margin: 0; /* Elimina el margen por defecto del cuerpo */
+    padding: 0; /* Elimina el relleno por defecto del cuerpo */
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: darkblue; /* Color de fondo del encabezado */
+    color: white; /* Color del texto del encabezado */
+    padding: 10px 0; /* Espaciado arriba y abajo del encabezado */
+    text-align: center; /* Centra el texto dentro del encabezado */
+}
+
+/* Estilos del título dentro del encabezado */
+header h1 {
+    margin: 0; /* Elimina el margen por defecto del título */
+}
+
+/* Estilos para la navegación */
+nav ul {
+    list-style: none; /* Elimina los puntos de lista por defecto */
+    padding: 0; /* Elimina el relleno por defecto de la lista */
+    margin: 0; /* Elimina el margen por defecto de la lista */
+}
+
+/* Estilos para los elementos de la lista de navegación */
+nav ul li {
+    display: inline; /* Muestra los elementos de la lista en línea (horizontalmente) */
+    margin: 0 15px; /* Espacio a los lados de cada elemento de la lista */
+}
+
+/* Estilos para los enlaces en la navegación */
+nav ul li a {
+    color: white; /* Color del texto del enlace */
+    text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
+    font-weight: bold; /* Hace que el texto del enlace sea negrita */
+}
+
+/* Estilos para los enlaces cuando el ratón pasa sobre ellos */
+nav ul li a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el ratón */
+}
+
+/* Estilos para el contenedor principal de contenido */
+.container {
+    width: 80%; /* Ancho del contenedor como porcentaje del ancho de la página */
+    margin: 20px auto; /* Margen vertical de 20px y centrado horizontalmente */
+    padding: 20px; /* Relleno interno del contenedor */
+    background-color: white; /* Color de fondo del contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil alrededor del contenedor */
+}
+
+/* Estilos para los títulos principales y secundarios */
+h1, h2 {
+    color: darkblue; /* Color del texto de los títulos */
+}
+
+/* Estilos para las secciones de juego */
+.game {
+    margin-bottom: 20px; /* Margen inferior de 20px */
+    padding: 10px; /* Relleno interno de 10px */
+    border: 1px solid #ddd; /* Borde delgado y gris claro alrededor de la sección */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos para las imágenes dentro de la sección de juego */
+.game img {
+    width: 100%; /* Imagen se ajusta al ancho del contenedor */
+    max-width: 300px; /* Ancho máximo de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    display: block; /* Muestra la imagen como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+/* Estilos para los párrafos dentro de la sección de juego */
+.game p {
+    font-size: 16px; /* Tamaño del texto en los párrafos */
+    color: darkslategray; /* Color del texto */
+}
+
+/* Estilos para las listas dentro de la sección de juego */
+.game ul {
+    list-style: disc; /* Usa discos como estilo de lista */
+    margin-left: 20px; /* Margen izquierdo para la lista */
+}
+
+/* Estilos para el botón de compra */
+.buy-button {
+    display: block; /* Muestra el botón como un bloque */
+    width: 150px; /* Ancho del botón */
+    margin: 10px auto; /* Margen vertical de 10px y centrado horizontalmente */
+    padding: 10px; /* Relleno interno del botón */
+    font-size: 16px; /* Tamaño del texto en el botón */
+    color: white; /* Color del texto en el botón */
+    background-color: green; /* Color de fondo del botón */
+    border: none; /* Elimina el borde por defecto del botón */
+    border-radius: 5px; /* Bordes redondeados del botón */
+    cursor: pointer; /* Muestra un cursor de puntero al pasar sobre el botón */
+    text-align: center; /* Centra el texto dentro del botón */
+    text-decoration: none; /* Elimina el subrayado del texto del botón */
+}
+
+/* Estilos para el botón de compra cuando el ratón pasa sobre él */
+.buy-button:hover {
+    background-color: darkgreen; /* Cambia el color de fondo al pasar el ratón */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: darkblue; /* Color de fondo del pie de página */
+    color: white; /* Color del texto en el pie de página */
+    text-align: center; /* Centra el texto dentro del pie de página */
+    padding: 10px 0; /* Espaciado arriba y abajo del pie de página */
+    position: fixed; /* Fija el pie de página en la parte inferior de la página */
+    width: 100%; /* Ancho del pie de página igual al ancho de la página */
+    bottom: 0; /* Ubica el pie de página en la parte inferior de la página */
+}
+

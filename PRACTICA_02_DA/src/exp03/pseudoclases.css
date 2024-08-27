@@ -1,0 +1,12 @@
+/* Configuro estilos utilizando pseudo clases */
+a:hover {
+    color: yellow; /* El color del enlace sera amarrillo cuando pase el raton sobre el */
+}
+
+p:focus {
+    background-color: green; /* El fondo del parrafo sera verde cuando tenga el foco */
+}
+
+button:active {
+    background-color: pink; /* El fondo del boton será rosado cuando este presionado */
+}

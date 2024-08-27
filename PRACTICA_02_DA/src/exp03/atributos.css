@@ -1,0 +1,12 @@
+/* Configuro estilos para elementos basados en sus atributos */
+input[type="text"] {
+    border: 4px solid blue; /* Los campos de texto tendran un borde azul */
+}
+
+input[type="password"] {
+    border: 7px solid red; /* Los campos de contraseña tendrán un borde rojo */
+}
+
+button[type="submit"] {
+    background-color: pink; /* Los botones de envio tendran un fondo Rosa*/
+}

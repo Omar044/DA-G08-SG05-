@@ -1,0 +1,99 @@
+/* Aplicación de colores con nombres y clases */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black; /* Fondo oscuro para destacar el contenido */
+    color: white; /* Contraste para el texto */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de navegación */
+header {
+    background-color: violet;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: yellow;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: aqua;
+}
+
+/* Estilo para el banner */
+.banner {
+    background: green;
+    padding: 2em;
+    text-align: center;
+}
+
+.banner h2 {
+    margin: 0;
+}
+
+/* Estilo para productos */
+.productos {
+    padding: 2em;
+    text-align: center;
+}
+
+.producto {
+    margin: 1em 0;
+    border: 2px dashed purple;
+    padding: 1em;
+}
+
+.producto h3 {
+    margin-bottom: 0.5em;
+    color: orange;
+}
+
+/* Estilo para el formulario de contacto */
+.contacto {
+    padding: 2em;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto label {
+    margin-bottom: 0.5em;
+    color: lime;
+}
+
+.contacto input, .contacto textarea {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 1px solid pink;
+    border-radius: 5px;
+}
+
+.contacto button {
+    padding: 0.7em;
+    background-color: magenta;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: violet;
+    text-align: center;
+    padding: 1em;
+    color: w

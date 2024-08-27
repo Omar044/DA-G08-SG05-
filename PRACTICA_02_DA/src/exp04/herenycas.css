@@ -1,0 +1,42 @@
+
+/* Herencia */
+body {
+    font-family: Arial, sans-serif; /* Fuente común para todo el documento */
+    color: black; /* Color de texto general */
+    background-color: pink; /* Fondo gris claro */
+    margin: 20px; /* Margen general para el body */
+}
+
+h1 {
+    color: red; /* Color rojo para h1 */
+}
+
+p {
+    color: black; /* Color negro oscuro para párrafos */
+}
+
+/* Herencia y Cascada */
+h1, h2, p {
+    margin-bottom: 15px; /* Margen inferior uniforme para h1, h2 y p */
+}
+
+h2 {
+    color: green; /* Color verde para h2 */
+}
+
+p {
+    font-size: 23px; /* Tamaño de fuente para párrafos */
+}
+
+button {
+    font-size: 14px; /* Tamaño de fuente para botones */
+    color: white; /* Color blanco para el texto del botón */
+    background-color: blue; /* Fondo azul para el botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border-radius: 5px; /* Bordes redondeados para el botón */
+    cursor: pointer; /* Cursor pointer para indicar que es clickeable */
+}
+
+button:hover {
+    background-color: #0056b3; /* Fondo azul más oscuro al pasar el ratón */
+}

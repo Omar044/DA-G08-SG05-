@@ -1,0 +1,55 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    color: dimgray;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del botón */
+.animar-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: mediumblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: parpadeo 2s infinite;
+}
+
+/* Transición al pasar el mouse */
+.animar-btn:hover {
+    background-color: darkblue;
+    transform: scale(1.1);
+}
+
+/* Animación parpadeo */
+@keyframes parpadeo {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* Estilos adicionales */
+header {
+    background-color: red;
+    color: white;
+    padding: 10px 0;
+}
+
+footer {
+    background-color: red;
+    color: green;
+    padding: 10px 0;
+    font-weight: bold;
+}
+

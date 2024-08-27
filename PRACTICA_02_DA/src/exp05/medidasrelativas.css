@@ -1,0 +1,50 @@
+/* Utilización de medidas relativas */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Fuente común */
+    background-color: #e0f7fa; /* Fondo azul claro */
+	
+}
+
+/* Encabezado */
+header {
+    background-color: #00796b; /* Verde oscuro */
+    color: white; /* Texto blanco */
+    padding: 2vw; /* Espaciado interno usando vw (viewport width) */
+    text-align: center; /* Alineación centrada */
+}
+
+/* Sección principal */
+main {
+    padding: 2vw; /* Espaciado interno usando vw */
+}
+
+/* Secciones de equipo */
+.team1 {
+    background-color: green; /* Fondo blanco */
+    border: 1px solid white; /* Borde verde oscuro */
+    border-radius: 1em; /* Bordes redondeados usando em */
+    margin: 1em 0; /* Margen superior e inferior usando em */
+    padding: 2%; /* Espaciado interno usando % */
+    text-align: center; /* Alineación centrada */
+	color: white;
+}
+
+.team2 {
+    background-color: blue; /* Fondo blanco */
+    border: 1px solid white; /* Borde verde oscuro */
+    border-radius: 1em; /* Bordes redondeados usando em */
+    margin: 1em 0; /* Margen superior e inferior usando em */
+    padding: 2%; /* Espaciado interno usando % */
+    text-align: center; /* Alineación centrada */
+	color: white;
+}
+/* Pie de página */
+footer {
+    
+    color: black; /* Texto blanco */
+	text-align: center; /* Alineación centrada */
+	}
+    
+

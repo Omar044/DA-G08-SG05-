@@ -1,0 +1,49 @@
+/* Selectores Combinados */
+h1.rojo.grande {
+    color: red; /* Aplico color rojo a un h1 con las clases "rojo" y "grande" */
+}
+
+p > span {
+    background-color: yellow; /* Aplico un fondo amarillo a los span dentro de un párrafo */
+}
+
+ul li:first-child {
+    font-weight: bold; /* La primera lista de un elemento de la lista será en negrita */
+}
+
+div + p {
+    color: purple; /* Cambia el color a morado de cualquier párrafo inmediatamente después de un div */
+}
+
+h1.red.underline {
+    text-decoration: underline; /* Subrayo los encabezados con clases "red" y "underline" */
+}
+
+div#especial > p.highlight {
+    background-color: lightgreen; /* Aplico fondo verde claro a un párrafo con la clase "highlight" dentro de un div con id "especial" */
+}
+
+p a.link {
+    color: darkorange; /* Aplico color naranja oscuro a los enlaces dentro de párrafos con la clase "link" */
+}
+
+/* Selectores Múltiples */
+h2, h3, h4 {
+    color: green; /* Aplico color verde a h2, h3, y h4 */
+}
+
+a, p {
+    font-family: Arial, sans-serif; /* Aplico la fuente Arial a todos los enlaces y párrafos */
+}
+
+input[type="text"], input[type="password"] {
+    border: 2px solid black; /* Aplico un borde negro a los campos de texto y contraseña */
+}
+
+p, div, span {
+    margin-bottom: 10px; /* Aplico un margen inferior a parrafos, divs y spans */
+}
+
+button, input[type="submit"] {
+    background-color: pink; /* Aplico un fondo pink y inputs de tipo submit */
+}

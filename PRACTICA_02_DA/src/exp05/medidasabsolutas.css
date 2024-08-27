@@ -1,0 +1,34 @@
+/* Medidas Absolutas */
+
+/* Usando píxeles (px) */
+h1 {
+    font-size: 36px; /* Tamaño de fuente fijo en píxeles */
+    margin-bottom: 20px; /* Margen inferior fijo en píxeles */
+	color: green;
+}
+
+p {
+    font-size: 18px; /* Tamaño de fuente fijo en píxeles */
+    line-height: 24px; /* Altura de línea fija en píxeles */
+}
+
+div.box {
+    width: 300px; /* Ancho fijo en píxeles */
+    height: 150px; /* Alto fijo en píxeles */
+    background-color: white; /* Fondo azul claro */
+    border: 15px solid blue; /* Borde negro */
+    padding: 15px; /* Espaciado interno */
+}
+
+/* Usando centímetros (cm) */
+div.container {
+    width: 15cm; /* Ancho fijo en centímetros */
+    height: 4cm; /* Alto fijo en centímetros */
+    background-color: white; /* Fondo verde claro */
+    border: 2cm solid red; /* Borde oscuro */
+}
+
+/* Usando puntos (pt) */
+p.note {
+    font-size: 14pt; /* Tamaño de fuente fijo en puntos */
+}

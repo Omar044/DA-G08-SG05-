@@ -1,0 +1,16 @@
+/* Estilos utilizando pseudo elementos */
+h1::before {
+    content: "👔 "; /* Agrego una corbata antes del encabezado */
+    color: blue; /* La corbata azul */
+    font-size: 2em; /* Aumento el tamaño de la corbata */
+}
+
+h1::after {
+    content: " 🎁"; 
+    color: red; 
+    font-size: 2em; 
+}
+
+p::first-line {
+    font-weight: 900; /* La primera linea del parrafo sera en negrita */
+}

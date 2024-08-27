@@ -1,0 +1,92 @@
+/* Reseteo de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: lightpink; /* Fondo del cuerpo, color rosado claro */
+    color: darkslategray; /* Texto del cuerpo, color gris oscuro */
+    font-size: 16px; /* Tamaño de fuente base */
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: hotpink; /* Fondo del encabezado, color rosa intenso */
+    color: white; /* Texto del encabezado, color blanco */
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Estilo del contenido principal */
+main {
+    padding: 1em;
+}
+
+section {
+    margin-bottom: 1em;
+}
+
+.producto {
+    background-color: white; /* Fondo de los productos, color blanco */
+    border: 2px solid deeppink; /* Bordes de los productos, color rosa fuerte */
+    padding: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.producto h3 {
+    margin-bottom: 0.5em;
+    color: tomato; /* Color del título del producto, color rojo anaranjado */
+}
+
+.precio {
+    color: crimson; /* Texto de precio, color rojo intenso */
+    font-weight: bold;
+}
+
+/* Estilo del formulario */
+form {
+    background-color: lavenderblush; /* Fondo del formulario, color lavanda rosada */
+    border: 2px solid hotpink; /* Bordes del formulario, color rosa intenso */
+    padding: 1em;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold; /* Resalta las etiquetas del formulario */
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid deeppink; /* Bordes del formulario, color rosa fuerte */
+}
+
+form button {
+    background-color: tomato; /* Fondo del botón, color rojo anaranjado */
+    color: white; /* Texto del botón, color blanco */
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Bordes redondeados del botón */
+    font-size: 16px; /* Tamaño de fuente del botón */
+}
+
+form button:hover {
+    background-color: salmon; /* Fondo del botón al pasar el ratón, color salmón */
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: hotpink; /* Fondo del pie de página, color rosa intenso */
+    color: white; /* Texto del pie de página, color blanco */
+    text-align: center;
+    padding: 1em 0;
+}

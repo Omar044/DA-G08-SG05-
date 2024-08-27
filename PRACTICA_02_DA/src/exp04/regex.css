@@ -1,0 +1,32 @@
+/* Selectores Regex */
+
+/* Aplico un tamaño de fuente a las clases que empiezan con "icon-" */
+[class^="icon-"] {
+    font-size: 50px;
+}
+
+/* Aplico una sombra de caja con desplazamiento de 4px y difuminado de 10px a las clases que contienen "btn-" */
+[class*="btn-"] {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9);
+	
+	     /* Desplazamiento horizontal: 4px 
+	        Desplazamiento vertical: 4px 
+	        Difuminado: 10px 
+	        Color: rgba(0, 0, 0, 0.3) (Negro con opacidad del 30%)
+	    */
+}
+
+/* Aplico un fondo rosa a los elementos cuyo id termina en "-content" */
+[id$="-content"] {
+    background-color: pink;
+}
+
+/* Aplico un color azul a los enlaces que empiezan con "https://" */
+a[href^="https://"] {
+    color: blue;
+}
+
+/* Aplico un borde de 5px sólido y verde a los inputs de tipo texto */
+input[type$="text"] {
+    border: 5px solid red;
+}
