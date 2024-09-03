@@ -1,0 +1,21 @@
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'fruteria celulares celulares'
+        'laptops accesorios ofertas';
+    grid-gap: 10px;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+.grid-container > div {
+    background-color: #e0f7fa;
+    padding: 20px;
+    border: 1px solid #001d48;
+}
+
+.item1 { grid-area: fruteria; }
+.item2 { grid-area: celulares; }
+.item3 { grid-area: laptops; }
+.item4 { grid-area: accesorios; }
+.item5 { grid-area: ofertas; }

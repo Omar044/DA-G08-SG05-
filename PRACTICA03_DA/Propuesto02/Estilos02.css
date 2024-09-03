@@ -1,0 +1,55 @@
+/* Estilos generales */
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3f2fd; /* Fondo azul claro */
+}
+
+header, footer {
+    background-color: #0d47a1; /* Azul oscuro para tema tecnológico */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    background-color: #1976d2; /* Azul brillante */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Breakpoint para 900px */
+@media (max-width: 900px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Breakpoint para 480px */
+@media (max-width: 480px) {
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    header {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,29 @@
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff8e1;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ffeb3b;
+    padding: 10px;
+    background-color: #f9fbe7;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #004d40;
+}
