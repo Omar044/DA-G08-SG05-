@@ -3,57 +3,80 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #e0e0e0; /* Color de fondo para contrastar con los cuadros */
 }
 
+/* Contenedor de la grilla */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
-    gap: 10px;
-    padding: 20px;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    grid-template-rows: repeat(2, 1fr); /* 2 filas (ajustado para 6 imágenes) */
+    gap: 5px; /* Espacio reducido entre los cuadros */
+    padding: 5px; /* Espacio reducido dentro del contenedor */
+    width: calc(100% - 10px); /* Ajusta el ancho del contenedor para que no se desborde */
+    margin: 20px auto 0 auto; /* Reducir el margen superior para posicionar la grilla más abajo */
+    max-width: 1200px; /* Máximo ancho del contenedor para mantener la grilla compacta */
 }
 
+/* Asegura que los elementos de la grilla se mantengan dentro de sus celdas */
 .grid-container > div {
     background-color: #f4f4f4;
-    border: 2px solid #ddd;
-    padding: 20px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 6px; /* Reducir el radio del borde para celdas más compactas */
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1); /* Reducir la sombra para un efecto de profundidad más sutil */
+    transition: transform 0.2s ease-in-out;
+    overflow: hidden; /* Asegura que las imágenes no se desborden de las celdas */
+    position: relative; /* Asegura que las imágenes se mantengan dentro del contenedor */
+}
+
+/* Ajustar el tamaño de las imágenes en los cuadros */
+.grid-container img {
+    width: 100%; /* La imagen ajustará su ancho al del contenedor */
+    height: 100%; /* Ajustar la altura para llenar el contenedor */
+    object-fit: cover; /* La imagen cubrirá el contenedor sin mantener la proporción */
+    display: block; /* Elimina el espacio adicional debajo de la imagen */
+}
+
+/* Efecto hover para los ítems */
+.grid-container > div:hover {
+    transform: translateY(-2px); /* Reducir el efecto hover para celdas más compactas */
 }
 
 /* Estilo de los ítems */
 .item1 {
-    grid-column: span 2;
     background-color: #d32f2f; /* Rojo vibrante */
-}
-.item2 {
-    grid-column: span 2;
-    background-color: #1976d2; /* Azul intenso */
-}
-.item3 {
-    background-color: #388e3c; /* Verde fuerte */
-}
-.item4 {
-    grid-column: span 3;
-    background-color: #fbc02d; /* Amarillo brillante */
-}
-.item5 {
-    background-color: #7b1fa2; /* Morado oscuro */
-}
-.item6 {
-    grid-column: span 2;
-    background-color: #e64a19; /* Naranja quemado */
-}
-.item7 {
-    background-color: #303f9f; /* Azul profundo */
+    color: black;
 }
 
-/* Media query para pantallas pequeñas */
-@media (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
-    .grid-container > div {
-        grid-column: span 1;
-    }
+.item2 {
+    background-color: #1976d2; /* Azul intenso */
+    color: black;
 }
+
+.item3 {
+    background-color: #388e3c; /* Verde fuerte */
+    color: black;
+}
+
+.item4 {
+    grid-column: span 2; /* Abarca dos columnas */
+    grid-row: span 2; /* Abarca dos filas */
+    background-color: #fbc02d; /* Amarillo brillante */
+    color: black;
+}
+
+.item5 {
+    background-color: #7b1fa2; /* Morado oscuro */
+    color: black;
+}
+
+.item6 {
+    background-color: #e64a19; /* Naranja quemado */
+    color: black;
+}
+
