@@ -1,0 +1,65 @@
+/* Estilos generales */
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Fondo ligero */
+}
+
+header, footer {
+    background-color: #4caf50; /* Verde de frutas frescas */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff8e1; /* Fondo cálido */
+}
+
+section, aside {
+    background-color: #fff9c4; /* Fondo de frutas maduras */
+    padding: 20px;
+    border: 2px solid #ffeb3b; /* Borde amarillo brillante */
+    margin: 10px;
+}
+
+/* Disposición en pantallas grandes */
+section {
+    flex: 3;
+}
+
+aside {
+    flex: 1;
+}
+
+/* Breakpoint para pantallas de 900px o menos */
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+    }
+
+    section, aside {
+        width: 100%;
+    }
+}
+
+/* Breakpoint para pantallas de 480px o menos */
+@media (max-width: 480px) {
+    header, footer {
+        font-size: 18px;
+    }
+
+    section h2, aside h2 {
+        font-size: 20px;
+    }
+
+    section, aside {
+        padding: 10px;
+    }
+}
+
