@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatos - Manipulación de Arrays</title>
+    <link rel="stylesheet" href="estilos05B.css">
+</head>
+<body>
+    <h1>Razas de Gatos</h1>
+    <ul id="razasGatos"></ul>
+    <button id="mostrarRazas">Mostrar Razas</button>
+
+    <script>
+        const razas = ['Siames', 'Persa', 'Maine Coon', 'Sphynx'];
+
+        document.getElementById('mostrarRazas').onclick = function() {
+            razas.push('Bengalí'); // Agregar nueva raza
+            const listaRazas = razas.map(raza => `<li>${raza}</li>`).join('');
+            document.getElementById('razasGatos').innerHTML = listaRazas;
+        };
+    </script>
+</body>
+</html>

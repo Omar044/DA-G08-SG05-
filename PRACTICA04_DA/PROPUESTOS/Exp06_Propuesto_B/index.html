@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatos - Busqueda en Arrays</title>
+    <link rel="stylesheet" href="estilos06B.css">
+</head>
+<body>
+    <h1>😺🐾HELP! MICHI!🐱🐈</h1>
+    <input type="text" id="busqueda" placeholder="Nombre del gato">
+    <button id="buscarGato">Buscar</button>
+    <p id="resultado"></p>
+
+    <script>
+        const gatos = ['Mirelita', 'Omarsito', 'Cristal', 'Thiani'];
+
+        document.getElementById('buscarGato').onclick = function() {
+            const nombre = document.getElementById('busqueda').value;
+            const encontrado = gatos.includes(nombre);
+            document.getElementById('resultado').innerHTML = encontrado ? `Gato encontrado: ${nombre}` : 'El gato no existe';
+        };
+    </script>
+</body>
+</html>

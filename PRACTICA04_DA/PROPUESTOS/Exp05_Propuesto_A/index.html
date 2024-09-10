@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fútbol - Creación de Arrays</title>
+    <link rel="stylesheet" href="estilos05A.css">
+</head>
+<body>
+    <h1>Posiciones en el Campo</h1>
+    <ul id="posiciones"></ul>
+    <button id="mostrarPosiciones">Mostrar Posiciones</button>
+
+    <script>
+        const posiciones = ['Delantero', 'Mediocampista', 'Defensor', 'Portero'];
+
+        document.getElementById('mostrarPosiciones').onclick = function() {
+            const listaPosiciones = posiciones.map(pos => `<li>${pos}</li>`).join('');
+            document.getElementById('posiciones').innerHTML = listaPosiciones;
+        };
+    </script>
+</body>
+</html>

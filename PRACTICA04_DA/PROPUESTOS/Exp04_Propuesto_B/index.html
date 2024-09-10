@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatos - Propiedades de Objetos</title>
+    <link rel="stylesheet" href="estilos04B.css">
+</head>
+<body>
+    <h1>Gatos</h1>
+    <ul id="gatos"></ul>
+    <button id="mostrarGatos">Mostrar Gatos</button>
+
+    <script>
+        const gato = {
+            nombre: 'Michi',
+            raza: 'Siames',
+            edad: 3
+        };
+
+        document.getElementById('mostrarGatos').onclick = function() {
+            const gatoInfo = `<li>Nombre: ${gato.nombre}</li><li>Raza: ${gato.raza}</li><li>Edad: ${gato.edad}</li>`;
+            document.getElementById('gatos').innerHTML = gatoInfo;
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fútbol - Hoisting de Variables</title>
+    <link rel="stylesheet" href="estilos02B.css">
+</head>
+<body>
+    <h1>Fútbol y la Estrategia del Juego</h1>
+    <p id="estrategia">La estrategia está por decidirse...</p>
+    <button id="mostrarEstrategia">Ver Estrategia</button>
+
+    <script>
+        document.getElementById('mostrarEstrategia').onclick = function() {
+            console.log(estrategia); // undefined debido a hoisting
+            var estrategia = "4-4-2 con presión alta"; // variable declarada después
+            document.getElementById('estrategia').innerHTML = estrategia;
+        };
+    </script>
+</body>
+</html>

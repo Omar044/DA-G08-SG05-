@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fútbol - Funciones de Primera Clase</title>
+    <link rel="stylesheet" href="estilos03A.css">
+</head>
+<body>
+    <h1>Estrategia de Primera Clase</h1>
+    <p id="resultado"></p>
+    <button id="iniciarEstrategia">Iniciar Estrategia</button>
+
+    <script>
+        const formacion = () => {
+            return "4-3-3 con ataque rápido";
+        };
+
+        document.getElementById("iniciarEstrategia").onclick = function() {
+            document.getElementById("resultado").innerHTML = formacion();
+        };
+    </script>
+</body>
+</html>

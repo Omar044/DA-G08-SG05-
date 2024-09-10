@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fútbol - Declaración con `<script>`</title>
+    <link rel="stylesheet" href="estilos01B.css">
+</head>
+<body>
+    <h1>Pasión por el Fútbol</h1>
+    <p id="resultado">El partido está por comenzar.</p>
+    <button id="botonResultado">Ver resultado del partido</button>
+
+    <script>
+        document.getElementById('botonResultado').onclick = function() {
+            document.getElementById('resultado').innerHTML = "El equipo local ganó 2-0";
+        };
+    </script>
+</body>
+</html>

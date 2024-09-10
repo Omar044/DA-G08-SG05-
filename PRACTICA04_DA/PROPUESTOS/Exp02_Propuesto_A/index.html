@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatos - Variables y Constantes</title>
+    <link rel="stylesheet" href="estilos02A.css">
+</head>
+<body>
+    <h1>Los Gatos y sus Nombres</h1>
+    <p id="mensaje">¿Cuál es el nombre de tu gato?</p>
+    <button id="mostrarNombre">Mostrar Nombre del Gato</button>
+
+    <script>
+        let nombreGato = "Whiskers";
+        const edadGato = 2;
+
+        document.getElementById('mostrarNombre').onclick = function() {
+            document.getElementById('mensaje').innerHTML = `Mi gato se llama ${nombreGato} y tiene ${edadGato} años.`;
+        };
+    </script>
+</body>
+</html>

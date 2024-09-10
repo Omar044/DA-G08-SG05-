@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fútbol - Métodos de Arrays</title>
+    <link rel="stylesheet" href="estilos06A.css">
+</head>
+<body>
+    <h1>Jugadores del Equipo</h1>
+    <ul id="jugadores"></ul>
+    <button id="filtrarDelanteros">Filtrar Delanteros</button>
+
+    <script>
+        const jugadores = [
+            { nombre: 'Lionel Messi', posición: 'Delantero' },
+            { nombre: 'Sergio Ramos', posición: 'Defensor' },
+            { nombre: 'Cristiano Ronaldo', posición: 'Delantero' },
+            { nombre: 'Marcelo', posición: 'Defensor' }
+        ];
+
+        document.getElementById('filtrarDelanteros').onclick = function() {
+            const delanteros = jugadores.filter(jugador => jugador.posición === 'Delantero');
+            const listaDelanteros = delanteros.map(jugador => `<li>${jugador.nombre}</li>`).join('');
+            document.getElementById('jugadores').innerHTML = listaDelanteros;
+        };
+    </script>
+</body>
+</html>

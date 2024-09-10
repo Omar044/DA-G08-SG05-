@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fútbol - Creación de Jugadores</title>
+    <link rel="stylesheet" href="estilos04A.css">
+</head>
+<body>
+    <h1>Lista de Jugadores</h1>
+    <ul id="jugadores"></ul>
+    <button id="mostrarJugadores">Ver Jugadores</button>
+
+    <script>
+        const jugadores = [
+            { nombre: 'Lionel Messi', posición: 'Delantero' },
+            { nombre: 'Cristiano Ronaldo', posición: 'Delantero' },
+            { nombre: 'Manuel Neuer', posición: 'Portero' }
+        ];
+
+        document.getElementById('mostrarJugadores').onclick = function() {
+            const listaJugadores = jugadores.map(jugador => `<li>${jugador.nombre} - ${jugador.posición}</li>`).join('');
+            document.getElementById('jugadores').innerHTML = listaJugadores;
+        };
+    </script>
+</body>
+</html>

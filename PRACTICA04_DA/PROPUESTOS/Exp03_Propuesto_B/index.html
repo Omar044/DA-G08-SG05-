@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatos - Closure</title>
+    <link rel="stylesheet" href="estilos03B.css">
+</head>
+<body>
+    <h1>Mis Gatos</h1>
+    <p id="gato"></p>
+    <button id="mostrarGato">Mostrar Nombre de Gato</button>
+
+    <script>
+        function crearGato() {
+            const nombre = 'Michi';
+            function mostrarNombre() {
+                return nombre;
+            }
+            return mostrarNombre;
+        }
+
+        const miGato = crearGato();
+
+        document.getElementById("mostrarGato").onclick = function() {
+            document.getElementById("gato").innerHTML = miGato();
+        };
+    </script>
+</body>
+</html>
