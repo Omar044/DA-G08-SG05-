@@ -1,0 +1,52 @@
+
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-stack: Helvetica, sans-serif;
+
+// Estilos básicos usando variables
+body {
+    font-family: $font-stack;
+    background-color: $primary-color;
+    color: white;
+}
+
+// Anidamiento
+nav {
+    background-color: $secondary-color;
+
+    ul {
+        list-style: none;
+
+        li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+    }
+}
+
+// Mixin para bordes
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: $primary-color;
+    color: white;
+    @include border-radius(5px);
+    &:hover {
+        background-color: darken($primary-color, 10%);
+    }
+}
+
+// Función para convertir píxeles a em
+@function px-to-em($px, $base-font-size: 16px) {
+    @return $px / $base-font-size * 1em;
+}
+
+h1 {
+    font-size: px-to-em(24px);
+}

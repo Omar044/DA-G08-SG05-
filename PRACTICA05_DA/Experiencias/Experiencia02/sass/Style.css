@@ -1,0 +1,30 @@
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #3498db;
+  color: white;
+}
+
+nav {
+  background-color: #2ecc71;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+}
+.button:hover {
+  background-color: #217dbb;
+}
+
+h1 {
+  font-size: 1.5em;
+}/*# sourceMappingURL=Style.css.map */
