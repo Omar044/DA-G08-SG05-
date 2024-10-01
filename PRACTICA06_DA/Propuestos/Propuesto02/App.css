@@ -1,0 +1,49 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+  transform: scale(1.4);
+  transform-origin: top;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+h1 {
+  font-size: 5em;
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 4em;
+  margin: 15px 0;
+  color: #ff0000;
+}
+
+p {
+  font-size: 3em;
+  margin: 20px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 20px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #0000ff;
+  font-size: 2.5em;
+}
+
+a:hover {
+  text-decoration: underline;
+}

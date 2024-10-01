@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Portafolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Acerca de</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <img src="img1.jpg" class="rounded-circle mb-4" alt="Perfil">
+        <h1>Empezar con Bootstrap</h1>
+        <p>Desarrollador Web - Diseñador - Freelance</p>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div class="container portfolio">
+        <h2 class="text-center my-4">Portafolio</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="image-container">
+                    <img src="img2.jpg" alt="Imagen de Portafolio">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="image-container">
+                    <img src="img3.jpg" alt="Imagen de Portafolio">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="image-container">
+                    <img src="img4.jpg" alt="Imagen de Portafolio">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="image-container">
+                    <img src="img5.jpg" alt="Imagen de Portafolio">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="image-container">
+                    <img src="img6.png" alt="Imagen de Portafolio">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="image-container">
+                    <img src="img7.jpg" alt="Imagen de Portafolio">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="about-section">
+        <h2>Acerca de</h2>
+        <p>Empresa que reserva derechos.</p>
+        <button type="button" class="btn btn-light btn-lg" data-toggle="modal" data-target="#contactModal">Contáctame</button>
+    </div>
+
+    <!-- Modal for Contact Form -->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Formulario de Contacto</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Tu mensaje"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Enviar Mensaje</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Derechos reservados © Bootstrap</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

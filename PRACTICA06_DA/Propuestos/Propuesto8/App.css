@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+h1 {
+  font-size: 5em;
+  margin: 10px 0;
+}
+
+.instrucciones {
+  font-size: 3em; 
+  margin: 20px 0;
+}
+
+input {
+  font-size: 2em;
+  margin: 20px 0;
+  padding: 10px; 
+}
+
+button {
+  font-size: 2em;
+  margin: 10px;
+  padding: 10px 20px; 
+}
+
+.jugadores-title {
+  font-size: 4em; 
+}
+
+ul {
+  list-style-type: none; 
+  padding: 0;
+}
+
+li {
+  font-size: 3em; 
+  margin: 10px 0;
+}

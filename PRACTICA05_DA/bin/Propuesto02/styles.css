@@ -1,0 +1,42 @@
+.hero {
+    background: linear-gradient(45deg, #ff4e50, #fc913a);
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    font-family: 'Arial', sans-serif;
+}
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.hero p {
+    font-size: 1.5rem;
+}
+.circle-image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.section {
+    padding: 50px 0;
+}
+.text-image-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    flex-direction: column;
+    text-align: center;
+}
+.text-image-block img {
+    margin-bottom: 20px;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}

@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+h1 {
+  font-size: 5em;
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 3em;
+  color: #ff0000;
+}
+
+p {
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  font-size: 2em;
+  margin: 10px 0;
+}
+

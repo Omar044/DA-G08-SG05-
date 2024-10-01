@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+h1 {
+  font-size: 5em;
+  margin: 10px 0;
+}
+
+.introduce-nombre {
+  font-size: 3em; 
+  margin: 20px 0;
+}
+
+.nombre-input {
+  font-size: 2.5em;
+  margin: 20px 0;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px; 
+  width: 50%; 
+}
+
+.nombre-input::placeholder {
+  color: #888; 
+}
+
+.saludo {
+  font-size: 4em; 
+  margin: 30px 0; 
+}
+

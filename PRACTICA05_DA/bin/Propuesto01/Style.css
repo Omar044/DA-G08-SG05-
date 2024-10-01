@@ -1,0 +1,25 @@
+.tarifas h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.tarifas .card {
+  margin: 15px;
+}
+.tarifas .card .card-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.tarifas .card .card-text {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+.tarifas .card .btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.tarifas .card .btn:hover {
+  background-color: #0056b3;
+}/*# sourceMappingURL=Style.css.map */
