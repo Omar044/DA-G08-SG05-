@@ -11,6 +11,7 @@ const Players = () => {
         {players.map(player => ( // Mapea la lista de jugadores
           <li key={player.id}>
             <Link to={player.id.toString()}>{player.name}</Link>
+			<button onClick={()=>removePlayer(player.id)}>Eliminar</button>
           </li>
         ))}
       </ul>
