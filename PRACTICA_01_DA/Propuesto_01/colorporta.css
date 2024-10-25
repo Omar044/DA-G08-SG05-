@@ -1,0 +1,154 @@
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Contenedor Principal */
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Encabezado (Header) --- */
+header {
+    background-color: #800020; /* Color guinda */
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    background-image: url('url-de-la-imagen-de-fondo');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+header p {
+    font-size: 1.5em;
+}
+
+/* --- Menú de Navegación (Nav) --- */
+nav {
+    background-color: #4B0082;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav-menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.nav-menu li a:hover {
+    background-color: #800020;
+    border-radius: 5px;
+}
+
+/* --- Contenido Principal (Main) --- */
+main {
+    padding: 40px 0;
+}
+
+/* Sección General */
+.section {
+    margin-bottom: 50px;
+}
+
+.section h2 {
+    color: #800020;
+    border-bottom: 2px solid #800020;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* --- Lista de Habilidades (Skills List) --- */
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid #800020;
+    transition: transform 0.3s ease;
+}
+
+.skills-list li:hover {
+    transform: translateX(10px);
+}
+
+/* --- Experiencia y Proyectos (Experience and Projects) --- */
+.experience-item, .project-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.experience-item h3, .project-item h3 {
+    margin-top: 0;
+    color: #800020;
+}
+
+/* --- Botón (Button) --- */
+.btn {
+    display: inline-block;
+    background-color: #4B0082;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #800020;
+}
+
+/* --- Pie de Página (Footer) --- */
+footer {
+    background-color: #4B0082;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <meta name="description" content="Formulario de registro para crear una cuenta en nuestro sitio web. Incluye validaciones de entrada y mensajes de error.">
+    
+    <!-- Link to CSS Stylesheet -->
+    <link rel="stylesheet" href="stileform.css">
+</head>
+<body>
+
+    <!-- Contenedor Principal -->
+    <div class="container">
+        <!-- Título del Formulario -->
+        <h1>Registro de Usuario</h1>
+
+        <!-- Formulario -->
+        <form action="#" method="post" id="registration-form">
+            <!-- Grupo de Formulario: Nombre Completo -->
+            <div class="form-group">
+                <label for="name">Nombre Completo:</label>
+                <input type="text" id="name" name="name" required minlength="2" maxlength="50" placeholder="Ingresa tu nombre completo">
+                <small class="error-message">El nombre completo es obligatorio y debe tener entre 2 y 50 caracteres.</small>
+            </div>
+
+            <!-- Grupo de Formulario: Correo Electrónico -->
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required placeholder="ejemplo@dominio.com">
+                <small class="error-message">Por favor, ingresa una dirección de correo electrónico válida.</small>
+            </div>
+
+            <!-- Grupo de Formulario: Contraseña -->
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required minlength="8" placeholder="Ingresa tu contraseña">
+                <small class="error-message">La contraseña debe tener al menos 8 caracteres.</small>
+            </div>
+
+            <!-- Grupo de Formulario: Confirmar Contraseña -->
+            <div class="form-group">
+                <label for="confirm-password">Confirmar Contraseña:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required minlength="8" placeholder="Confirma tu contraseña">
+                <small class="error-message">Las contraseñas deben coincidir.</small>
+            </div>
+
+            <!-- Grupo de Formulario: Teléfono -->
+            <div class="form-group">
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890">
+                <small class="error-message">El teléfono debe ser un número de 10 dígitos.</small>
+            </div>
+
+            <!-- Grupo de Formulario: Fecha de Nacimiento -->
+            <div class="form-group">
+                <label for="birthdate">Fecha de Nacimiento:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+                <small class="error-message">Por favor, selecciona tu fecha de nacimiento.</small>
+            </div>
+
+            <!-- Botón de Envío -->
+            <button type="submit" class="btn">Registrarse</button>
+        </form>
+    </div>
+
+</body>
+</html>
+

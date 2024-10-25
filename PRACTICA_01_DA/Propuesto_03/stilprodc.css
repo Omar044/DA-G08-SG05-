@@ -1,0 +1,80 @@
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif; /* Fuente general para la página */
+    background-color: #f4f4f4; /* Color de fondo de la página */
+    color: #333; /* Color del texto */
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina rellenos por defecto */
+}
+
+.container {
+    width: 90%; /* Ancho del contenedor (90% del ancho de la ventana) */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Espacio interno del contenedor */
+}
+
+/* Estilo para el Encabezado */
+header {
+    background-color: #800020; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto en el encabezado */
+    padding: 20px 0; /* Espacio interno del encabezado */
+    text-align: center; /* Centra el texto en el encabezado */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra del encabezado */
+}
+
+header h1 {
+    margin: 0; /* Elimina márgenes alrededor del título */
+    font-size: 2.5em; /* Tamaño de fuente del título */
+}
+
+/* Estilo para el Menú de Navegación */
+nav {
+    background-color: #4B0082; /* Color de fondo del menú de navegación */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra del menú de navegación */
+}
+
+.nav-menu {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 10px 0; /* Espacio interno del menú */
+    text-align: center; /* Centra el texto del menú */
+    margin: 0; /* Elimina márgenes alrededor del menú */
+}
+
+.nav-menu li {
+    display: inline; /* Muestra los elementos de la lista en línea */
+    margin: 0 15px; /* Espacio a los lados de cada elemento */
+}
+
+.nav-menu li a {
+    color: #fff; /* Color del texto del enlace */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    padding: 10px 15px; /* Espacio interno del enlace */
+    font-weight: bold; /* Fuente en negrita para los enlaces */
+    transition: background-color 0.3s ease-in-out; /* Transición suave para el cambio de color de fondo */
+}
+
+.nav-menu li a:hover {
+    background-color: #800020; /* Color de fondo cuando se pasa el ratón sobre el enlace */
+    border-radius: 5px; /* Bordes redondeados del enlace */
+}
+
+/* Estilo para el Contenido Principal */
+main {
+    padding: 40px 0; /* Espacio interno superior e inferior del contenido principal */
+}
+
+.section {
+    margin-bottom: 50px; /* Espacio inferior entre secciones */
+}
+
+.section h2 {
+    color: #800020; /* Color del texto del encabezado de sección */
+    border-bottom: 2px solid #800020; /* Línea de borde en la parte inferior del encabezado */
+    padding-bottom: 10px; /* Espacio interno inferior del encabezado */
+    margin-bottom: 20px; /* Espacio inferior del encabezado */
+    font-size: 2em; /* Tamaño de fuente del encabezado de sección */
+}
+
+.product-info {
+    display: flex
