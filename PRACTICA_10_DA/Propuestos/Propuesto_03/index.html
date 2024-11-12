@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción de Jugadores</title>
+</head>
+<body>
+    <h1>Formulario de Inscripción de Jugador</h1>
+    <form action="/agregar" method="POST">
+        <label for="nombre">Nombre del Jugador:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="equipo">Equipo:</label><br>
+        <input type="text" id="equipo" name="equipo" required><br><br>
+
+        <label for="edad">Edad:</label><br>
+        <input type="text" id="edad" name="edad" required><br><br>
+
+
+        <input type="submit" value="Inscribir Jugador">
+    </form>
+
+    <hr>
+
+    <h2>Jugadores Inscritos</h2>
+    <button onclick="mostrarJugadores()">Ver Jugadores Inscritos</button>
+    <ul id="jugadores-lista"></ul>
+
+    <script>
+        function mostrarJugadores() {
+            fetch('/jugadores')
+                .then(response => response.json())
+                .then(data => {
+                    const lista = document.getElementById('jugadores-lista');
+                    lista.innerHTML = ''; // Limpiar lista antes de mostrarla
+
+                    data.forEach(jugador => {
+                        const li = document.createElement('li');
+                        li.textContent = `- Jugador: ${jugador.nombre} - Equipo: ${jugador.equipo} -Edad: ${jugador.edad}`;
+                        lista.appendChild(li);
+                    });
+                })
+                .catch(error => console.log('Error al cargar los jugadores: ', error));
+        }
+    </script>
+</body>
+</html>
