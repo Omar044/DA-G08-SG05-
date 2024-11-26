@@ -1,0 +1,23 @@
+use tienda
+
+db.productos.insertMany([  { nombre: "Sofá Cama", descripcion: "Sofá que se convierte en cama", categoria: "Muebles", precio: 350 },  { nombre: "Auricular Sony WH-1000XM4", descripcion: "Auriculares con cancelación de ruido", categoria: "Electrónica", precio: 400 },  { nombre: "Teléfono Xiaomi Redmi Note 11", descripcion: "Smartphone con 128GB de almacenamiento", categoria: "Electrónica", precio: 180 },  { nombre: "Silla de Oficina", descripcion: "Silla ergonómica para oficina", categoria: "Muebles", precio: 120 },  { nombre: "Mesa de Comedor", descripcion: "Mesa de madera para 4 personas", categoria: "Muebles", precio: 250 }])
+
+db.productos.find().sort({ precio: 1 })
+
+db.productos.countDocuments()
+
+db.productos.find({ precio: { $eq: 350 } })
+
+db.productos.find({ precio: { $gt: 200 } })
+
+db.productos.find({ precio: { $ne: 200 } })
+
+db.productos.find({ precio: { $ne: 400 } })
+
+db.productos.find({ precio: { $gt: 120 } })
+
+db.productos.find({ precio: { $gte: 120 } })
+
+db.productos.find({ precio: { $lt: 150 } })
+
+db.productos.find({ precio: { $lte: 200 } })
